@@ -20,6 +20,11 @@
 3. `with_undistort_colmap.py`: do reconstruction on resized image, then undistort for larger image. The large image can be used for high fedality 3dgs reconstruction.
 4. `colmap_hloc.py`: normal `colmap+hloc` reconstruction. 
 
+### Resources
+Based on this work I wrote below two articles which is driving total of >2000 traffic per month in learnopencv.
+- [3D Gaussian Splatting Introduction – Paper Explanation & Training on Custom Datasets with NeRF Studio Gsplats](https://learnopencv.com/3d-gaussian-splatting/)
+- [Object Insertion in Gaussian Splatting: Paper Explanation and Training of MCMC in Gsplat](https://learnopencv.com/object-insertion-in-gaussian-splatting/)
+
 ---
 
 
