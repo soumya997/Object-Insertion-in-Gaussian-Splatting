@@ -245,8 +245,8 @@ class GsData:
         return [(np.pi/180)  * i  for i in rpy_deg]
 
 if __name__ == "__main__":
-    base_obj_fdr = "/home/somusan/dev-somusan/classical_cv/3d_vision/3dgs/dataset/trash/"
-    base_scene_fdr = "/home/somusan/dev-somusan/classical_cv/3d_vision/3dgs/dataset/garder/"
+    base_obj_fdr = "data"
+    base_scene_fdr = "data"
     
     # Load and process the object PLY file
     obj_path = os.path.join(base_obj_fdr, "point_cloud.ply")
@@ -257,10 +257,12 @@ if __name__ == "__main__":
     scale_factor = 0.06
     obj_gs_data.rescale(scale_factor)
     
+    # values need to be adjusted for object placement
     rpy = [80, -180, 30]   # -193 for y worked y-185, inc z - > rotates the obj like falling face first
     rpy_rad = obj_gs_data.deg2rad(rpy)
     obj_gs_data.rotate(rpy_rad)
 
+    # values need to be adjusted for object placement
     x, y, z = 0.05, -0.3, 0.6 # z val -> high bring up obj # inc in y -> toward the center
     obj_gs_data.translation(x,y,z)
 
@@ -291,7 +293,7 @@ if __name__ == "__main__":
 
 
     # Save the merged result
-    output_path = os.path.join("process_3dgs_file", "garden_canvas_merged_v2.ply")
+    output_path = os.path.join("data", "garden_canvas_merged_v2.ply")
     merged_gs.save_to_ply(output_path, with_colors=True)
     
     print(f"Original scene points: {len(scene_gs_data.xyz)}")
