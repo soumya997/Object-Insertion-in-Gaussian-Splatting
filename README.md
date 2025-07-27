@@ -17,8 +17,8 @@
 
 1. `src/insert_canvas_in_garden.py` : insert canvas ply to garden ply
 2. `src/colmap_rerun.py` : Used for Rerun logging 
-3. `with_undistort_colmap.py`: do reconstruction on resized image, then undistort for larger image. The large image can be used for high fedality 3dgs reconstruction.
-4. `colmap_hloc.py`: normal `colmap+hloc` reconstruction. 
+3. `src/with_undistort_colmap.py`: do reconstruction on resized image, then undistort for larger image. The large image can be used for high fedality 3dgs reconstruction.
+4. `src/colmap_hloc.py`: normal `colmap+hloc` reconstruction. 
 
 ### Resources
 Based on this work I wrote below two articles which is driving total of >2000 traffic per month in learnopencv.
@@ -32,7 +32,7 @@ Based on this work I wrote below two articles which is driving total of >2000 tr
 Download the dataset from here:
 - [**garden**](http://storage.googleapis.com/gresearch/refraw360/360_v2.zip)
 - [**Canvas**](https://www.dropbox.com/scl/fi/2k5xfxpani744dzbxco5h/obj_insert_canvas_data_blog.zip?rlkey=pxwui6w4h7s8ql3eqpxzq51ls&st=8fl2f5f1&dl=1)
-
+- [Small and Large Scene](https://drive.google.com/file/d/1WmfLF4rpmGeiuWsr4nZ3NoDyBfSUCzmL/view?usp=sharing) create a `data` folder and put the files there.
 
 
 
