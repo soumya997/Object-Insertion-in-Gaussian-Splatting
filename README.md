@@ -110,3 +110,5 @@ This approach allows us to directly operate on the Gaussian .ply file instead of
 
 The output .ply file can be easily be visualized using the supersplat visualizer.
 
+### Reference
+- https://github.com/yzslab/gaussian-splatting-lightning
